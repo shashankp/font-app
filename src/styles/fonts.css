@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Lobster';
-    src: local('Lobster'), url(./fonts/Lobster_1.3.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-}
-
-
 @font-face {    font-family: 'Annamayya';     src: local('Annamayya'), url(./fonts/Annamayya.otf) format('opentype'); }
 @font-face {    font-family: 'AnnamayyaBold';     src: local('AnnamayyaBold'), url(./fonts/AnnamayyaBold.otf) format('opentype'); }
 @font-face {    font-family: 'AnnamayyaBoldItalic';     src: local('AnnamayyaBoldItalic'), url(./fonts/AnnamayyaBoldItalic.otf) format('opentype'); }
