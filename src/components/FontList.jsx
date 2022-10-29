@@ -3,77 +3,63 @@ import "antd/dist/antd.min.css";
 import { AutoComplete } from 'antd';
 
 const fontList = ["Lobster", "Arial",
+"Annamayya",
+"AnnamayyaBold",
+"AnnamayyaBoldItalic",
+"AnnamayyaItalic",
 "Chathura-Bold",
 "Chathura-ExtraBold",
 "Chathura-Light",
 "Chathura-Regular",
 "Chathura-Thin",
-"JIMS-Italic",
+"Dhurjati",
+"Dhurjati-Italic",
+"Gidugu",
+"Gidugu-Italic",
+"Gurajada",
+"Gurajada-Italic",
 "JIMS",
+"JIMS-Italic",
+"KanakaDurga",
+"KanakaDurga-Italic",
 "LakkiReddy",
+"Lobster_1.3",
+"Mallanna",
+"Mallanna-Italic",
+"Mandali-Bold Italic",
 "Mandali-Bold",
 "Mandali-BoldItalic",
 "Mandali-Italic",
 "Mandali-Regular",
+"NATS",
+"NATS-Italic",
+"NTR",
+"NTR-Italic",
+"Nandakam Regular",
+"PVNR",
 "Peddana-Regular",
 "Ponnala",
 "Potti Sreeramulu",
+"Purushothamaa",
+"Purushothamaa-Italic",
 "Ramabhadra-Italic",
 "Ramabhadra-Regular",
 "RamaneeyaWin",
 "Ramaraja-Regular",
 "RaviPrakash",
 "SPBalasubrahmanyam",
-"TenaliRamakrishna-Regular",
-"TimmanaRegular",
-"Annamayya",
-"AnnamayyaBold",
-"AnnamayyaBoldItalic",
-"AnnamayyaItalic",
-"Dhurjati-Italic",
-"Dhurjati",
-"Gidugu-Italic",
-"Gidugu",
-"Gurajada-Italic",
-"Gurajada",
-"JIMS-Italic",
-"JIMS",
-"KanakaDurga-Italic",
-"KanakaDurga",
-"Lobster_1.3",
-"Mallanna-Italic",
-"Mallanna",
-"Mandali-Bold Italic",
-"Mandali-Bold",
-"Mandali-Italic",
-"Mandali-Regular",
-"Nandakam Regular",
-"NATS-Italic",
-"NATS",
-"NTR-Italic",
-"NTR",
-"Potti Sreeramulu",
-"Purushothamaa-Italic",
-"Purushothamaa",
-"PVNR",
-"Ramabhadra-Italic",
-"Ramabhadra-Regular",
-"SPBalasubrahmanyam",
-"Sree Krushnadevaraya-Italic",
 "Sree Krushnadevaraya",
+"Sree Krushnadevaraya-Italic",
 "Suranna Bold Italic",
 "Suranna Bold",
 "Suranna Regular",
 "Suranna-Italic",
-"Suravaram-Italic",
 "Suravaram",
+"Suravaram-Italic",
 "Syamala Ramana",
+"TenaliRamakrishna-Regular",
+"TimmanaRegular",
 ];
-
-const searchFontWithFragment = (str) => {
-    const filteredFonts = fontList.filter(font => font.toLowerCase().includes(str.toLowerCase()));
-    return filteredFonts.map(font => ({ label: font, value: font }));
-}
 
 function FontList(props) {
 
@@ -81,9 +67,7 @@ function FontList(props) {
     const [options, setOptions] = useState([]);
 
     const onSelect = (data) => {
-        console.log('onSelect', data);
         props.callback(data);
-        setValue("");
     };
     
     const onChange = (data) => {
@@ -91,9 +75,12 @@ function FontList(props) {
     };
 
     const onSearch = (searchText) => {
-        setOptions(
-            !searchText ? [] : searchFontWithFragment(searchText),
-          );
+        let filteredFonts = []
+        if (searchText) {
+            filteredFonts = fontList.filter(font => font.toLowerCase().includes(searchText.toLowerCase()))
+                                          .map(font => ({ label: <span style={{fontFamily: font, fontSize: 20}}>అ - {font}</span>, value: font }));
+        }
+        setOptions(filteredFonts);
     }
 
     return (
@@ -106,8 +93,8 @@ function FontList(props) {
           onSearch={onSearch}
           onChange={onChange}
           placeholder="Add Font"
+          size="large"
           />
-          {/* TODO: preview font in dropdown */}
     </>
     )
 }

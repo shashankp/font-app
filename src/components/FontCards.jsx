@@ -95,16 +95,16 @@ function FontCards(props) {
             <Col span={4}>
                 <Input size="medium" placeholder='Title' name="title" type="text" value={title} onChange={(e) => {setTitle(e.target.value)}} /> 
             </Col>
-            <Col span={2}>
+            <Col span={3}>
                 <InputNumber min={10} max={50} placeholder="fontSize" value={fontSize} name="fontSize" onChange={(e) => setFontSize(e)} />
             </Col>
-            <Col span={2}>
+            <Col span={1}>
                 <input type="color" placeholder="color" value={color} onChange={(e) => setColor(e.target.value)}/>
             </Col>
-            <Col span={2}>
+            <Col span={3}>
                 <InputNumber min={0} max={250} step={5} placeholder="textX" value={textX} onChange={(e) => setTextX(e)}  />
             </Col>
-            <Col span={2}>
+            <Col span={3}>
                 <InputNumber min={0} max={250} step={5} placeholder="textY" value={textY} onChange={(e) => setTextY(e)}/>
             </Col>            
         </Row>
