@@ -105,7 +105,7 @@ function FontList(props) {
           onSelect={onSelect}
           onSearch={onSearch}
           onChange={onChange}
-          placeholder="Add Card"
+          placeholder="Add Font"
           />
           {/* TODO: preview font in dropdown */}
     </>

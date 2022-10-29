@@ -15,6 +15,7 @@ function FontCards(props) {
     const [textY, setTextY] = useState(0);
     const [color, setColor] = useState('');
     const [fonts, setFonts] = useState([]);
+    const [imgsrc, setImgSrc] = useState('');
 
     useEffect(() => {
         const savedtitle = JSON.parse(localStorage.getItem('title'));
@@ -30,6 +31,8 @@ function FontCards(props) {
         const savedfonts = JSON.parse(localStorage.getItem('fonts'));
         if (savedfonts && savedfonts.length > 0) setFonts(savedfonts);
         else setFonts([{ name: "Lobster", heart: true}]);
+        const savedimgsrc = JSON.parse(localStorage.getItem('imgsrc'));
+        if (savedimgsrc) setImgSrc(savedimgsrc);
     }, []);
 
     useEffect(() => {
@@ -58,6 +61,10 @@ function FontCards(props) {
         }
     }, [fonts]);
 
+    useEffect(() => {
+        localStorage.setItem('imgsrc', JSON.stringify(imgsrc));
+    }, [imgsrc]);
+
     const createFontCard = (fontName) => {
         setFonts([...fonts, {name: fontName, heart: false}]);
     }
@@ -80,20 +87,25 @@ function FontCards(props) {
         <>
         <Input.Group>
         <Row justify="center">
+            <Col span={8}>
+                <Input size="medium" placeholder='Image URL' name="image" type="text" value={imgsrc} onChange={(e) => {setImgSrc(e.target.value)}} /> 
+            </Col>
+        </Row>
+        <Row justify="center">
             <Col span={4}>
                 <Input size="medium" placeholder='Title' name="title" type="text" value={title} onChange={(e) => {setTitle(e.target.value)}} /> 
             </Col>
             <Col span={2}>
-                <InputNumber min={10} max={50} value={fontSize} name="fontSize" onChange={(e) => setFontSize(e)} />
+                <InputNumber min={10} max={50} placeholder="fontSize" value={fontSize} name="fontSize" onChange={(e) => setFontSize(e)} />
             </Col>
             <Col span={2}>
-                <input type="color" value={color} onChange={(e) => setColor(e.target.value)}/>
+                <input type="color" placeholder="color" value={color} onChange={(e) => setColor(e.target.value)}/>
             </Col>
             <Col span={2}>
-                <InputNumber min={0} max={250} step={5} value={textX} onChange={(e) => setTextX(e)}  />
+                <InputNumber min={0} max={250} step={5} placeholder="textX" value={textX} onChange={(e) => setTextX(e)}  />
             </Col>
             <Col span={2}>
-                <InputNumber min={0} max={250} step={5} value={textY} onChange={(e) => setTextY(e)}/>
+                <InputNumber min={0} max={250} step={5} placeholder="textY" value={textY} onChange={(e) => setTextY(e)}/>
             </Col>            
         </Row>
         </Input.Group>
@@ -135,7 +147,7 @@ function FontCards(props) {
                     actions={actions}
                     >
                     <div>
-                        <ImageCard title={title} font={font.name} color={color} fontSize={fontSize} textx={textX} texty={textY}/>
+                        <ImageCard title={title} font={font.name} color={color} fontSize={fontSize} textx={textX} texty={textY} imgsrc={imgsrc}/>
                     </div>
                 </Card>
             </div>)
