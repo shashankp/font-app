@@ -5,7 +5,7 @@ import FontList  from "./components/FontList";
 
 function App() {
   const [title, setTitle] = useState("");
-  const [fonts, setFonts] = useState(["Lobster", "Arial", "monotype"]);
+  const [fonts, setFonts] = useState([]);
 
   const createFontCard = (font) => {
     setFonts([...fonts, font]);
@@ -16,7 +16,7 @@ function App() {
        <input style={{ textAlign: 'center' }} placeholder='title' name="title" type="text" value={title} onChange={(e) => {setTitle(e.target.value)}} /> 
        <br/>
        <FontList callback={createFontCard}/>
-       <FontCards fonts={fonts} title={title}/>
+       <FontCards title={title}/>
     </div>
   );
 }
