@@ -3,9 +3,6 @@ import "antd/dist/antd.min.css";
 import { AutoComplete } from 'antd';
 
 const fontList = ["Lobster", "Arial", "Nandakam Regular"];
-const mockVal = (str, repeat = 1) => ({
-    value: str.repeat(repeat),
-});
 
 const searchFontWithFragment = (str) => {
     const filteredFonts = fontList.filter(font => font.toLowerCase().includes(str.toLowerCase()));
@@ -44,6 +41,7 @@ function FontList(props) {
           onChange={onChange}
           placeholder="Add Card"
           />
+          {/* TODO: preview font in dropdown */}
     </>
     )
 }
