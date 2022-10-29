@@ -54,7 +54,7 @@ function FontCards(props) {
                         </span>,
                         <DeleteOutlined onClick={event => { event.stopPropagation(); removeFont(font.name)}} />]
                 }
-                
+
             return (
             <div className="card" key={index}>
                 <Card
