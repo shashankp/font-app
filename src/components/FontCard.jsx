@@ -16,11 +16,11 @@ function FontCard(props) {
         }}
         actions={[
             <h4 style={{ paddingTop: "6px", fontFamily: font }} key="Name" >
-            {props.title || font} 
+            {font} 
             </h4>
         ]}
         >
-        <p style={{ fontFamily: font }}>{props.content}</p>
+        <p style={{ fontFamily: font }}>{props.title}</p>
         </Card>
     </div>
     )
