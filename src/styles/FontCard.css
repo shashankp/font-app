@@ -1,0 +1,10 @@
+.FontCard {
+    color: rebeccapurple;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'), url(./fonts/Lobster_1.3.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }

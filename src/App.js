@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import FontCard  from "./components/FontCard";
 
 function App() {
+  const [content, setContent] = useState("content");
+
+  const onChangeHandler = event => {
+    setContent(event.target.value);
+ };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <input name="content" type="text" value={content} onChange={onChangeHandler} />
+       <FontCard font="Arial" content={content} />
+       <FontCard font="Lobster" content={content} />
+       <FontCard font="monospace" content={content} />
     </div>
   );
 }
