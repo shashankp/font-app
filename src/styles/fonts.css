@@ -5,9 +5,69 @@
                               'embedded-opentype', and 'svg' */
 }
 
-@font-face {
-    font-family: 'Nandakam Regular';
-    src: local('Nandakam Regular'), url(./fonts/Nandakam\ Regular.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-}
+@font-face {    font-family: 'Annamayya';     src: local('Annamayya'), url(./fonts/Annamayya.otf) format('opentype'); }
+@font-face {    font-family: 'AnnamayyaBold';     src: local('AnnamayyaBold'), url(./fonts/AnnamayyaBold.otf) format('opentype'); }
+@font-face {    font-family: 'AnnamayyaBoldItalic';     src: local('AnnamayyaBoldItalic'), url(./fonts/AnnamayyaBoldItalic.otf) format('opentype'); }
+@font-face {    font-family: 'AnnamayyaItalic';     src: local('AnnamayyaItalic'), url(./fonts/AnnamayyaItalic.otf) format('opentype'); }
+@font-face {    font-family: 'Dhurjati-Italic';     src: local('Dhurjati-Italic.otf'), url(./fonts/Dhurjati-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Dhurjati';     src: local('Dhurjati.otf'), url(./fonts/Dhurjati.otf) format('opentype'); }
+@font-face {    font-family: 'Gidugu-Italic';     src: local('Gidugu-Italic.otf'), url(./fonts/Gidugu-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Gidugu';     src: local('Gidugu.otf'), url(./fonts/Gidugu.otf) format('opentype'); }
+@font-face {    font-family: 'Gurajada-Italic';     src: local('Gurajada-Italic.otf'), url(./fonts/Gurajada-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Gurajada';     src: local('Gurajada.otf'), url(./fonts/Gurajada.otf) format('opentype'); }
+@font-face {    font-family: 'JIMS-Italic';     src: local('JIMS-Italic.otf'), url(./fonts/JIMS-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'JIMS';     src: local('JIMS.otf'), url(./fonts/JIMS.otf) format('opentype'); }
+@font-face {    font-family: 'KanakaDurga-Italic';     src: local('KanakaDurga-Italic.otf'), url(./fonts/KanakaDurga-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'KanakaDurga';     src: local('KanakaDurga.otf'), url(./fonts/KanakaDurga.otf) format('opentype'); }
+@font-face {    font-family: 'Lobster_1.3';     src: local('Lobster_1.3.otf'), url(./fonts/Lobster_1.3.otf) format('opentype'); }
+@font-face {    font-family: 'Mallanna-Italic';     src: local('Mallanna-Italic.otf'), url(./fonts/Mallanna-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Mallanna';     src: local('Mallanna.otf'), url(./fonts/Mallanna.otf) format('opentype'); }
+@font-face {    font-family: 'Mandali-Bold Italic';     src: local('Mandali-Bold Italic.otf'), url(./fonts/Mandali-Bold Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Mandali-Bold';     src: local('Mandali-Bold.otf'), url(./fonts/Mandali-Bold.otf) format('opentype'); }
+@font-face {    font-family: 'Mandali-Italic';     src: local('Mandali-Italic.otf'), url(./fonts/Mandali-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Mandali-Regular';     src: local('Mandali-Regular.otf'), url(./fonts/Mandali-Regular.otf) format('opentype'); }
+@font-face {    font-family: 'Nandakam Regular';     src: local('Nandakam Regular.otf'), url(./fonts/Nandakam\ Regular.otf) format('opentype'); }
+@font-face {    font-family: 'NATS-Italic';     src: local('NATS-Italic.otf'), url(./fonts/NATS-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'NATS';     src: local('NATS.otf'), url(./fonts/NATS.otf) format('opentype'); }
+@font-face {    font-family: 'NTR-Italic';     src: local('NTR-Italic.otf'), url(./fonts/NTR-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'NTR';     src: local('NTR.otf'), url(./fonts/NTR.otf) format('opentype'); }
+@font-face {    font-family: 'Potti Sreeramulu';     src: local('Potti Sreeramulu.otf'), url(./fonts/Potti\ Sreeramulu.otf) format('opentype'); }
+@font-face {    font-family: 'Purushothamaa-Italic';     src: local('Purushothamaa-Italic.otf'), url(./fonts/Purushothamaa-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Purushothamaa';     src: local('Purushothamaa.otf'), url(./fonts/Purushothamaa.otf) format('opentype'); }
+@font-face {    font-family: 'PVNR';     src: local('PVNR.otf'), url(./fonts/PVNR.otf) format('opentype'); }
+@font-face {    font-family: 'Ramabhadra-Italic';     src: local('Ramabhadra-Italic.otf'), url(./fonts/Ramabhadra-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Ramabhadra-Regular';     src: local('Ramabhadra-Regular.otf'), url(./fonts/Ramabhadra-Regular.otf) format('opentype'); }
+@font-face {    font-family: 'SPBalasubrahmanyam';     src: local('SPBalasubrahmanyam.otf'), url(./fonts/SPBalasubrahmanyam.otf) format('opentype'); }
+@font-face {    font-family: 'Sree Krushnadevaraya-Italic';     src: local('Sree Krushnadevaraya-Italic.otf'), url(./fonts/Sree\ Krushnadevaraya-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Sree Krushnadevaraya';     src: local('Sree Krushnadevaraya.otf'), url(./fonts/Sree\ Krushnadevaraya.otf) format('opentype'); }
+@font-face {    font-family: 'Suranna Bold Italic';     src: local('Suranna Bold Italic.otf'), url(./fonts/Suranna\ Bold\ Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Suranna Bold';     src: local('Suranna Bold.otf'), url(./fonts/Suranna\ Bold.otf) format('opentype'); }
+@font-face {    font-family: 'Suranna Regular';     src: local('Suranna Regular.otf'), url(./fonts/Suranna\ Regular.otf) format('opentype'); }
+@font-face {    font-family: 'Suranna-Italic';     src: local('Suranna-Italic.otf'), url(./fonts/Suranna-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Suravaram-Italic';     src: local('Suravaram-Italic.otf'), url(./fonts/Suravaram-Italic.otf) format('opentype'); }
+@font-face {    font-family: 'Suravaram';     src: local('Suravaram.otf'), url(./fonts/Suravaram.otf) format('opentype'); }
+@font-face {    font-family: 'Syamala Ramana';     src: local('Syamala Ramana.otf'), url(./fonts/Syamala\ Ramana.otf) format('opentype'); }
+
+@font-face {    font-family: 'Chathura-Bold';     src: local('Chathura-Bold.ttf'), url(./fonts/Chathura-Bold.ttf) format('truetype'); }
+@font-face {    font-family: 'Chathura-ExtraBold';     src: local('Chathura-ExtraBold.ttf'), url(./fonts/Chathura-ExtraBold.ttf) format('truetype'); }
+@font-face {    font-family: 'Chathura-Light';     src: local('Chathura-Light.ttf'), url(./fonts/Chathura-Light.ttf) format('truetype'); }
+@font-face {    font-family: 'Chathura-Regular';     src: local('Chathura-Regular.ttf'), url(./fonts/Chathura-Regular.ttf) format('truetype'); }
+@font-face {    font-family: 'Chathura-Thin';     src: local('Chathura-Thin.ttf'), url(./fonts/Chathura-Thin.ttf) format('truetype'); }
+@font-face {    font-family: 'JIMS-Italic';     src: local('JIMS-Italic.ttf'), url(./fonts/JIMS-Italic.ttf) format('truetype'); }
+@font-face {    font-family: 'JIMS';     src: local('JIMS.ttf'), url(./fonts/JIMS.ttf) format('truetype'); }
+@font-face {    font-family: 'LakkiReddy';     src: local('LakkiReddy.ttf'), url(./fonts/LakkiReddy.ttf) format('truetype'); }
+@font-face {    font-family: 'Mandali-Bold';     src: local('Mandali-Bold.ttf'), url(./fonts/Mandali-Bold.ttf) format('truetype'); }
+@font-face {    font-family: 'Mandali-BoldItalic';     src: local('Mandali-BoldItalic.ttf'), url(./fonts/Mandali-BoldItalic.ttf) format('truetype'); }
+@font-face {    font-family: 'Mandali-Italic';     src: local('Mandali-Italic.ttf'), url(./fonts/Mandali-Italic.ttf) format('truetype'); }
+@font-face {    font-family: 'Mandali-Regular';     src: local('Mandali-Regular.ttf'), url(./fonts/Mandali-Regular.ttf) format('truetype'); }
+@font-face {    font-family: 'Peddana-Regular';     src: local('Peddana-Regular.ttf'), url(./fonts/Peddana-Regular.ttf) format('truetype'); }
+@font-face {    font-family: 'Ponnala';     src: local('Ponnala.ttf'), url(./fonts/Ponnala.ttf) format('truetype'); }
+@font-face {    font-family: 'Potti Sreeramulu';     src: local('Potti Sreeramulu.ttf'), url(./fonts/Potti\ Sreeramulu.ttf) format('truetype'); }
+@font-face {    font-family: 'Ramabhadra-Italic';     src: local('Ramabhadra-Italic.ttf'), url(./fonts/Ramabhadra-Italic.ttf) format('truetype'); }
+@font-face {    font-family: 'Ramabhadra-Regular';     src: local('Ramabhadra-Regular.ttf'), url(./fonts/Ramabhadra-Regular.ttf) format('truetype'); }
+@font-face {    font-family: 'RamaneeyaWin';     src: local('RamaneeyaWin.ttf'), url(./fonts/RamaneeyaWin.ttf) format('truetype'); }
+@font-face {    font-family: 'Ramaraja-Regular';     src: local('Ramaraja-Regular.ttf'), url(./fonts/Ramaraja-Regular.ttf) format('truetype'); }
+@font-face {    font-family: 'RaviPrakash';     src: local('RaviPrakash.ttf'), url(./fonts/RaviPrakash.ttf) format('truetype'); }
+@font-face {    font-family: 'SPBalasubrahmanyam';     src: local('SPBalasubrahmanyam.ttf'), url(./fonts/SPBalasubrahmanyam.ttf) format('truetype'); }
+@font-face {    font-family: 'TenaliRamakrishna-Regular';     src: local('TenaliRamakrishna-Regular.ttf'), url(./fonts/TenaliRamakrishna-Regular.ttf) format('truetype'); }
+@font-face {    font-family: 'TimmanaRegular';     src: local('TimmanaRegular.ttf'), url(./fonts/TimmanaRegular.ttf) format('truetype'); }

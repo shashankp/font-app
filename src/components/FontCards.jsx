@@ -28,9 +28,8 @@ function FontCards(props) {
         const savedcolor = JSON.parse(localStorage.getItem('color'));
         if (savedcolor) setColor(savedcolor);
         const savedfonts = JSON.parse(localStorage.getItem('fonts'));
-        console.log('saved fonts from localstorage', savedfonts)
         if (savedfonts && savedfonts.length > 0) setFonts(savedfonts);
-        else setFonts([{ name: "Lobster", heart: true}, {name:"Nandakam Regular", heart: false}]);
+        else setFonts([{ name: "Lobster", heart: true}]);
     }, []);
 
     useEffect(() => {
@@ -55,7 +54,6 @@ function FontCards(props) {
 
     useEffect(() => {
         if (fonts && fonts.length > 0) {
-            console.log('saving fonts', fonts);
             localStorage.setItem('fonts', JSON.stringify(fonts));
         }
     }, [fonts]);
