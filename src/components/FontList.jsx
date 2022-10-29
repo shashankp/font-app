@@ -2,12 +2,12 @@ import { useState } from "react";
 import "antd/dist/antd.min.css";
 import { AutoComplete } from 'antd';
 
+const fontList = ["Lobster", "Arial", "Nandakam Regular"];
 const mockVal = (str, repeat = 1) => ({
     value: str.repeat(repeat),
 });
 
 const searchFontWithFragment = (str) => {
-    const fontList = ["Lobster", "Arial", "Times New Roman", "Courier New", "Verdana"];
     const filteredFonts = fontList.filter(font => font.toLowerCase().includes(str.toLowerCase()));
     return filteredFonts.map(font => ({ label: font, value: font }));
 }
@@ -20,6 +20,7 @@ function FontList(props) {
     const onSelect = (data) => {
         console.log('onSelect', data);
         props.callback(data);
+        setValue("");
     };
     
     const onChange = (data) => {
@@ -41,7 +42,7 @@ function FontList(props) {
           onSelect={onSelect}
           onSearch={onSearch}
           onChange={onChange}
-          placeholder="Add Font"
+          placeholder="Add Card"
           />
     </>
     )
